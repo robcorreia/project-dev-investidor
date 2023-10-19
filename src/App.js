@@ -1,13 +1,11 @@
-import Button from "@mui/material/Button";
+import MainRouter from "main.routes";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Button variant="contained">Hello world</Button>
-      <Button variant="contained" color="secondary">
-        Hello world
-      </Button>
-    </>
+    <BrowserRouter>
+      <MainRouter />
+    </BrowserRouter>
   );
 }
 
