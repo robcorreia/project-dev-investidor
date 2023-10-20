@@ -1,10 +1,9 @@
-import LazyLoading from "_common/components/LazyLoading";
 import { lazy, Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-const Dashboard = lazy(() => import("./modules/dashboard/Dashboard"));
-const Users = lazy(() => import("./modules/users/Users"));
-const Tasks = lazy(() => import("./modules/tasks/Tasks"));
+const Dashboard = lazy(() => import("../modules/dashboard/Dashboard/Dashboard"));
+const Tasks = lazy(() => import("../modules/tasks/TasksList/TasksList"));
+const Users = lazy(() => import("../modules/users/UsersList/UsersList"));
 
 const MainRouter = () => {
   return (

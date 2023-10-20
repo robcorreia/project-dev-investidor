@@ -1,17 +1,32 @@
 import { createTheme } from "@mui/material/styles";
-import { green, purple } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: purple[500]
+      main: "#2d3436",
+      contrastText: "#ffffff"
     },
     secondary: {
-      main: green[500]
+      main: "#55efc4"
+      // contrastText: "#ffffff"
     }
   },
   shape: {
     borderRadius: 0
+  },
+  components: {
+    MuiButton: {
+      defaultProps: {
+        variant: "contained",
+        color: "primary"
+      },
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+        }
+      }
+    }
   }
 });
 
