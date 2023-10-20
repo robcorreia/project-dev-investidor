@@ -2,7 +2,7 @@ import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    zIndex: theme.zIndex.drawer + 1
+    // zIndex: theme.zIndex.drawer + 1,
     // background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`
   },
   menuButton: {

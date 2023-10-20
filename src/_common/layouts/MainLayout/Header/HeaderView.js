@@ -2,13 +2,13 @@ import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import useStyles from "./HeaderStyle";
 
-const HeaderView = () => {
+const HeaderView = ({ handleToggleSidebar }) => {
   const classes = useStyles();
 
   return (
-    <AppBar className={classes.root}>
+    <AppBar className={classes.root} sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
       <Toolbar>
-        <IconButton className={classes.menuButton} edge="start" color="inherit">
+        <IconButton edge="start" className={classes.menuButton} color="inherit" onClick={handleToggleSidebar}>
           <MenuIcon />
         </IconButton>
 
